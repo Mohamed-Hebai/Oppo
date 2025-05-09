@@ -1,0 +1,744 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Poppins:ital@1&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+    font-weight: 400;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2,h3{
+    color: rgba(104, 12, 252, 0.8);
+}
+
+a{
+    text-decoration: none;
+}
+
+#About h3{
+    color: rgba(104, 12, 252, 0.8) !important;
+
+}
+ 
+nav{
+    background-color: rgba(104, 12, 252, 0.8);
+    transition: top 0.5s ease;
+    z-index: 15;
+}
+nav .logo {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+nav #Lo{
+    width: 25vh;
+}
+nav ul li {
+    font-size: 0.8rem;
+    font-weight: 600;
+   
+}
+
+nav ul li a .nav-link{
+    color: white;
+}
+
+nav .navbar-brand {
+width: 4%;
+}
+nav ul a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    transition: width 0.4s;
+  }
+  /* nav ul a:hover:before {
+    width: 100%;
+  } */
+
+  body:not(body:has(:target)) li a[href="#home"],
+body:has(#home:target) li a[href="#home"],
+body:has(#About:target) li a[href="#About"],
+body:has(#services:target) li a[href="#services"],
+body:has(#work:target) li a[href="#work"],
+body:has(#clients:target) li a[href="#clients"],
+body:has(#team:target) li a[href="#team"] {
+  color: white ;  
+}
+
+body:not(body:has(:target)) li a[href="#home"]::before,
+body:has(#home:target) li a[href="#home"]::before,
+body:has(#About:target) li a[href="#About"]::before,
+body:has(#services:target) li a[href="#services"]::before,
+body:has(#work:target) li a[href="#work"]::before,
+body:has(#clients:target) li a[href="#clients"]::before,
+body:has(#team:target) li a[href="#team"]::before {
+  width: 100%;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    width: 7vh;
+    height: 7vh;
+    background-color: rgba(104, 12, 252, 1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transition: right 0.3s ease;
+  }
+
+ 
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+  }
+
+  /* زر الإغلاق */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: rgba(104, 12, 252, 1);
+  }
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgba(104, 12, 252, 1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 7vh;
+    height: 7vh;
+  }
+  
+  .back-to-top:hover {
+    background-color: white;
+    border: 1px solid rgba(104, 12, 252, 1);
+  }
+
+  .back-to-top:hover i{
+    color: rgba(104, 12, 252, 1);
+  }
+
+  .pricing-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #6d00c7;
+  }
+  
+
+
+  .card {
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    color: #6d00c7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b00b5;
+  }
+  
+  .list-group-item::before {
+    content: "✔️ ";
+    margin-right: 5px;
+    color: #6d00c7;
+  }
+  
+  .card-body {
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    
+  }
+
+#home{
+    background-image: url(../bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+}
+
+#home h1 {
+    font-size: 2rem;
+    
+}
+
+#home h1::after{
+    content:"|";
+    animation-name: typing;
+    animation-duration: 6s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing{
+    0% {content:"|";}
+    3% {content:"T|";}
+    6% {content:"Th|";}
+    9% {content:"The|";}
+    12% {content:"The |";}
+    15% {content:"The L|";}
+    18% {content:"The La|";}
+    21% {content:"The Lan|";}
+    24% {content:"The Land|";}
+    27% {content:"The Land |";}
+    30% {content:"The Land O|";}
+    33% {content:"The Land Of|";}
+    36% {content:"The Land Of |";}
+    39% {content:"The Land Of I|";}
+    42% {content:"The Land Of In|";}
+    45% {content:"The Land Of Inf|";}
+    48% {content:"The Land Of Infi|";}
+    51% {content:"The Land Of Infin|";}
+    54% {content:"The Land Of Infini|";}
+    57% {content:"The Land Of Infinit|";}
+    60% {content:"The Land Of Infinite|";}
+    63% {content:"The Land Of Infinite P|";}
+    66% {content:"The Land Of Infinite Po|";}
+    69% {content:"The Land Of Infinite Pos|";}
+    72% {content:"The Land Of Infinite Poss|";}
+    75% {content:"The Land Of Infinite Possi|";}
+    78% {content:"The Land Of Infinite Possib|";}
+    81% {content:"The Land Of Infinite Possibi|";}
+    84% {content:"The Land Of Infinite Possibil|";}
+    87% {content:"The Land Of Infinite Possibili|";}
+    90% {content:"The Land Of Infinite Possibilit|";}
+    97% {content:"The Land Of Infinite Possibiliti|";}
+    100% {content:"The Land Of Infinite Possibilities|";}
+    
+}
+
+
+#home .overlay{
+background-color: rgba(0, 0, 0, 0);
+position: absolute;
+top: 0;x: ;
+left: 0px;
+padding: 0;
+height: 100%;
+width: 100%;
+opacity: 0.9;
+}
+
+#home input{
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: #000;
+    color: white !important;
+    border: 2px Solid ;
+    border-radius: 30px;
+    
+}
+
+#home input::placeholder{
+
+    color: white !important;
+    
+}
+
+#About .content h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #111e2e;
+}
+
+#About .content .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+#About .buto{
+    background-color: rgba(104, 12, 252, 1);
+}
+
+#About .progress{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset
+}
+
+.buton{
+    padding: 10px 30px;
+    border: 1px solid rgba(104, 12, 252, 1);
+    border-radius: 15px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+#About .progress-bar{
+    background-color:rgba(104, 12, 252, 1) ;
+}
+
+.buto{
+    padding: 10px 30px;
+    border: 1px solid rgba(104, 12, 252, 1) ;
+    border-radius: 15px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+.buton-bg:hover {
+    background-color: white !important; 
+    color: #111e2e !important; 
+}
+
+.buton:hover {
+    background-color: #111e2e !important; 
+    color: white !important; 
+}
+
+#About .images::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.social-icon a{
+    text-decoration: none;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(17, 30, 46, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section-head  {
+    font-weight: 900;
+    font-size: 40px;
+    display: inline-block;
+    z-index: 4;
+}
+
+.section-head::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: -1;
+}
+#About h5{
+    text-align: center;
+    color: rgba(104, 12, 252, 1);
+    font-size: xx-large;
+    
+}
+
+#About .card-text{
+
+    line-height: 30px;
+}
+
+#About .card-body{
+    text-align: center;
+}
+#About .card{
+    box-shadow: 3px 3px 15px 0px rgba(17, 30, 46, 0.2);
+    transition: transform 0.65s;
+}
+
+#About .card:hover{
+    /* box-shadow: 3px 3px 15px 0px rgba(104, 12, 252, 0.5); */
+    transform: scale(1.85) translateX(-80px) ;
+    z-index: 3;
+}   
+
+#About .vision:hover{
+    /* box-shadow: 3px 3px 15px 0px rgba(104, 12, 252, 0.5); */
+    transform: scale(1.85) translateX(80px);
+    z-index: 2;
+}  
+
+#About .values:hover{
+    /* box-shadow: 3px 3px 15px 0px rgba(104, 12, 252, 0.5); */
+    transform: scale(1.25)translateX(9px) ;
+    z-index: 2;
+}   
+
+
+#services{
+    background-color:#f7f7f7; 
+}
+
+#services .service-box:hover .ico-circle{
+   background-color: #111e2e; !important
+}
+
+#services .service-box:hover {
+    transform: scale(1.05);
+}
+
+#services .service-box .ico-circle{
+    color: #111e2e; !important
+ }
+
+#services .service-box:hover .ico-circle{
+    color: yellow; !important
+ }
+
+
+
+ .service-box{
+    box-shadow: 0px 10px 30px -8px rgba(17, 30, 46, 0.1);
+    padding: 10px 0;
+    transition: all 0.4s;
+ }
+
+
+#services  h3 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+    color: #111e2e;
+    
+}
+
+#services .s-description{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    
+}
+
+#services .card{
+    transition: all 0.5s;
+    box-shadow: 0px 10px 30px -8px rgba(17, 30, 46, 0.1);
+}
+ 
+
+#services .card:hover{
+    transform: scale(1.20);
+    z-index: 99;
+}
+ 
+.service-ico .ico-circle{
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto; 
+    background-color: #f4f4f4;
+    transition: all 0.4s;
+}
+
+
+#work .layer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(104, 12, 252, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+ #work .icons i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: rgba(104, 12, 252, 1);
+    color: #eee;
+    transition: all 0.5s;
+  }
+
+#work .icons{
+    transition: top 0.5s;
+    top: 130%;
+    width: 70%;
+}
+
+
+#work .icons .mini{
+    font-size: x-small;
+    color: white;
+    padding: 0%;
+
+}
+
+#work .text{
+    top: -10%;
+    transition: top 0.5s;
+    color: white;
+
+}
+
+#work h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    ;
+  }
+
+  
+
+  #work h5{
+    font-size: small;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+  #work .image:hover .layer {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+#work .image:hover .text {
+  
+  top: 45%;
+}
+
+#work .image:hover .icons{
+    top: 68%;  
+}
+
+#work .image .icons i:hover {
+    background: transparent;
+    color: rgba(104, 12, 252, 1);
+  }
+
+  #clients{
+    background-color: #f7f7f7;
+  }
+
+  .section-counter{
+    background-color: white;
+    background-position:center center;
+    background-attachment: fixed;
+    padding: 2rem 0; 
+}
+
+.section-counter .val{
+    background-color: white;
+    background-position:center center;
+    background-attachment: fixed; 
+    border: 1px Solid white;
+    transition:all 0.5s;
+    
+}
+
+.section-counter .val :hover{
+    transform: scale(1.05);
+    
+}
+
+.counter-ico .ico-circle{
+    height: 70px;
+    width: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    color: rgba(104, 12, 252, 0.8);
+    
+}
+
+.counter-text{
+    color: black;
+    font-weight: 600;
+}
+#clients .nex{
+    background-color: rgba(104, 12, 252, 1);
+}
+
+#clients .ne{
+    color: rgba(104, 12, 252, 1) !important;
+}
+  #team{
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+
+#clients .carousel-control-next-icon{
+    background: none !important;
+    color: rgba(104, 12, 252, 1);
+}
+#clients .carousel-control-prev-icon{
+    background: none !important;
+    color: rgba(104, 12, 252, 1);
+}
+
+  .car-inner img{
+    width: 13%;
+  }
+
+  .list-inline a i{
+    border: 1px solid rgba(104, 12, 252, 1);
+    color: #fff;    
+    background-color: rgba(104, 12, 252, 1);
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .list-inline li{
+    padding: 0 10px;
+  }
+
+  .img-area .social {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+
+  .img-text {
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.single-team{
+    background-color: rgba(104, 12, 252, 1);  
+}
+
+.single-team:hover .social {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+#contact .info .item .icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.5s;
+    color: rgba(104, 12, 252, 1) !important;
+}
+
+#contact .info .item:hover .icon {
+    background: rgba(104, 12, 252, 1);
+    color: #eee !important;
+} 
+
+#contact .form input[type="text"], #contact .form input[type="email"], #contact .form textarea {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+#contact .form .buton {
+    padding: 10px 40px;
+    background-color: rgba(104, 12, 252, 1) !important;
+ 
+}
+.buton-bg:hover {
+    background: transparent !important;
+    color: white !important;
+}
