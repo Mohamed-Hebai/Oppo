@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppotopia</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/Master.Css">
+  <link href="imgs/pioneers LOGO .ico" rel="icon" type="image/png">
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg rounded-2 position-fixed start-0 end-0 Pt-3  " data-bs-theme="dark" ">
+    <div class="container">
+      <a class="navbar-brand logo text-white" href="#"><img id="Lo" src="logo.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link   mx-3 position-relative" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link  mx-3 position-relative" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3 position-relative" href="#services">Services </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  mx-3 position-relative" href="#clients">Opportunities</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  px-3 position-relative" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3  position-relative" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="nav-link mx-3  position-relative" href="#"><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="back-to-top" class="back-to-top d-flex align-items-center justify-content-center" title="Go to top">
+    <i class="fa-solid fa-arrow-up fa-xl"></i>
+  </div>
+  <button class="float-button" id="openModal"><i class="fa-solid fa-dollar-sign " style="color: #ffffff;"></i></button>
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="ca container">
+          <h1 class="pricing-title">Pricing Plans </h1>
+          <div class="row g-4 justify-content-center">
+      
+            <!-- Basic Plan -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Basic</h5>
+                  <p class="price">6,000 EGP</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">6 Jobs</li>
+                    <li class="list-group-item">90 Unlocks</li>
+                    <li class="list-group-item">2 Users</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Professional Plan -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Professional</h5>
+                  <p class="price">10,000 EGP</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">12 Jobs</li>
+                    <li class="list-group-item">180 Unlocks</li>
+                    <li class="list-group-item">4 Users</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Enterprise Plan -->
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Enterprise</h5>
+                  <p class="price">15,000 EGP</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">20 Jobs</li>
+                    <li class="list-group-item">300 Unlocks</li>
+                    <li class="list-group-item">6 Users</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <section id="home" class="text-white">
+    <div class="overlay d-flex justify-content-center align-items-center text-center text-white flex-column ">
+      <div class="content text-white">
+        <p class="fw-bolder fs-1 p-5"> </p>
+        <h1 class="p-1 "> </h1>
+      </div>
+      <div class="social-icon d-flex text-white mb-4">
+        <a href="#0">
+          <span class=""><i class="fa-brands fa-facebook" aria-hidden="true"></i></span>
+        </a>
+        <a href="#0">
+          <span><i class="fa-brands fa-twitter" aria-hidden="true"></i></span>
+        </a>
+        <a href="#0">
+          <span><i class="fa-brands fa-linkedin" aria-hidden="true"></i></span>
+        </a>
+        <a href="#0">
+          <span><i class="fa-brands fa-behance" aria-hidden="true"></i></span>
+        </a>
+        <a href="#0">
+          <span><i class="fa-brands fa-youtube" aria-hidden="true"></i></span>
+        </a>
+      </div>
+      <div class="container-fluid ">
+        <form class="d-flex  justify-content-center" role="search"> 
+          <input class="form-control me-2 w-50 p-3" type="search" placeholder="  Search Jobs                                                                                                           3000 Open Jobs" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </section>
+  <section id="About">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="images position-relative ">
+            <img class="w-100 rounded-2" src="Profile.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="content mb-30">
+            <h3>About US.</h3>
+            <span class="sub-title "> Job Matching  &amp; Internship Marketplace</span>
+            <p class="text-muted my-4">
+              <b> Oppotopia</b>  is a smart recruitment and internship platform designed to connect youth, students, and professionals with real, tailored opportunities in the Egyptian job market. Whether you're a university student seeking hands-on experience or a graduate looking for a full-time role, Oppotopia bridges the gap by offering curated job and internship listings across various industries. Unlike traditional job portals, Oppotopia focuses on relevance, personalization, and accessibility — making it easier for users to discover meaningful positions aligned with their skills and career goals. With a user-friendly interface and a growing network of companies, Oppotopia is not just a job board — it's your launchpad into the world of opportunity.
+            </p>
+
+            <!-- skills progress -->
+            <div class="progress mb-4" role="progressbar" aria-label="Example with label " aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 25px;">
+              <div class="progress-bar d-flex justify-content-between flex-row align-items-center  text-white"
+                style="width: 95%; "><span class="px-3">Jobs</span><span class="px-3">+500</span></div>
+            </div>
+            <div class="progress mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 25px;">
+              <div class="progress-bar d-flex justify-content-between flex-row align-items-center text-white"
+                style="width: 80%"><span class="px-3">Interships</span><span class="px-3">+3000</span></div>
+            </div>
+            <div class="progress mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100" style="height: 25px;">
+              <div class="progress-bar d-flex justify-content-between flex-row align-items-center text-white"
+                style="width: 90%"><span class="px-3">Companies</span><span class="px-3">+10</span></div>
+            </div>
+
+            <a href="#0" download="">
+              <span class="buto buton-bg  text-white">Download Breif</span>
+            </a>
+            <a href="#0" data-scroll-nav="6">
+              <span class="buton text-black">Contact Us</span>
+            </a>
+          </div>
+        </div>
+        <div class="row row-cols-1 col g-4 mb-3 p-3">
+          <div class="col-md-6">
+            <div class="card vision h-100 flex-column rounded-2 ">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder py-2">Vision</h5>
+                <p class="card-text">To be the premier platform in Egypt that bridges 
+                  education and employment, empowering the next generation of professionals.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card h-100 ">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder ">Mission</h5>
+                <p class="card-text">
+                  To empower undergraduates and fresh graduates with the practical experience, 
+                  skills, and insights they need to excel in the labor market through access to 
+                  internships and development opportunities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-counter paralax-mf bg-image text-black text-center card values wx">
+            <h5 class="card-title fw-bolder head p-2">Values</h5>
+            <div class="container position-relative z-2">
+              <div class="row">
+                <div class="col-sm-2 col-lg-2 val">
+                  <div class="counter-box counter-box  pt-md-0">
+                    <div class="counter-ico text-black">
+                      <span class="ico-circle p-1 d-flex justify-content-center align-items-center"><i class="fa-solid fa-hand-fist fa-2xl"></i></i></span>
+                    </div>
+                    <div class="counter-num mt-1 ">
+                      <span class="counter-text">Empowerment</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-2 val">
+                  <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico text-black">
+                      <span class="ico-circle p-3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-handshake fa-2xl"></i></span>
+                    </div>
+                    <div class="counter-num mt-1 ">
+                      <span class="counter-text">Collaboration</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-2 val">
+                  <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico text-black">
+                      <span class="ico-circle p-3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-universal-access fa-2xl"></i></span>
+                    </div>
+                    <div class="counter-num mt-1 ">
+                      <span class="counter-text">Accessability</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-2 val">
+                  <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico text-black">
+                      <span class="ico-circle p-3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-brain fa-2xl"></i></span>
+                    </div>
+                    <div class="counter-num mt-1 ">
+                      <span class="counter-text">Growth Mindset</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-2 val">
+                  <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico text-black">
+                      <span class="ico-circle p-3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-shield fa-2xl"></i></span>
+                    </div>
+                    <div class="counter-num mt-1 ">
+                      <span class="counter-text">Integrity</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-2 val">
+                  <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico text-black">
+                      <span class="ico-circle p-3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-earth-americas fa-2xl"></i></span>
+                    </div>
+                    <div class="counter-num mt-1 ">
+                      <span class="counter-text">Impact</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container py-5 w-75">
+      <div class="row">
+        <div class="title-box text-center">
+          <h2 class="section-head position-relative">
+            Services.
+          </h2>
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1690376981672.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">Recent Opportunities</h5>
+              
+              <p class="card-text">
+                Opportunities waiting for you!
+                Whether it’s a job, an internship, or a student team to join —
+                each card is a real chance to grow, learn, and take your next step .</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" >
+            <img src="1690376981675.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">Seamless Connections</h5>
+              <p class="card-text ">Whether you're looking to join a team, land your first internship, or take the next step in your career journey, Oppotopia connects you with opportunities that truly match your path.
+
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" >
+            <img src="1690376981674.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">Growth</h5>
+              <p class="card-text">At Oppotopia, we believe that every student and fresh graduate deserves more than just a listing — they deserve a path.
+                Whether it’s joining a team, gaining hands-on experience  .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="container py-5">
+      <div class="title-box text-center">
+        <h2 class="section-head position-relative mb-5 z-2">
+          Opportunities.
+        </h2>
+      </div>
+      <div class="portfolio-area mb-4">
+        <ul class="nav nav-underline mb-3 gap-2 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active px-2 text-black" id="pills-all-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+              aria-selected="true">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-2 text-black" id="pills-Brand-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-Brand" type="button" role="tab" aria-controls="pills-Brand"
+              aria-selected="false">Jobs</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-2 text-black" id="pills-Design-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-Design" type="button" role="tab" aria-controls="pills-Design"
+              aria-selected="false">Interships</button>
+          </li>
+          
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+            tabindex="0">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="10.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle ">
+                    <h6 class="sm-title">Mechatronics Engineering Internship</h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle ">
+                    <p class="mini "> A leading industrial company is looking for passionate mechatronics engineering students for a summer internship program.</p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Cairo / Alexandria</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="11.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title">Junior Social Media Specialist</h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini "> A tech-focused startup is hiring a junior social media specialist to manage its online presence and content.
+                    </p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Remote / Hybrid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="12.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title"> Sustainability Program Intern</h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini"> NGO working in green tech and sustainable development is seeking interns for awareness projects.
+                    </p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Online / Field</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="13.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title"> Technical Content Creator (Internship) </h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini"> Join a growing educational platform and help create content that simplifies engineering concepts.
+                    </p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Online</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="14.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title">Project Coordinator </h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini"> Tech company is looking for an organized intern to support its project management team.
+                    </p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Alexandria / Hybrid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="15.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title">Automation Engineer </h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini"> A multinational is hiring fresh graduates to join its automation team.</p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Cairo / 6th of October</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Brand" role="tabpanel" aria-labelledby="pills-Brand-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+              <div class="col">
+                <div class="col">
+                  <div class="image rounded overflow-hidden position-relative">
+                    <img class="w-100" src="15.jpeg" alt="">
+                    <div class="layer "></div>
+                    <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                      <h6 class="sm-title">Automation Engineer </h6>
+                    </div>
+                    <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                      <p class="mini"> A multinational is hiring fresh graduates to join its automation team.</p>
+                      <h5 class="text-white p-1">Location :</h5>
+                      <p class="mini"> Cairo / 6th of October</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="14.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title">Project Coordinator </h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini"> Tech company is looking for an organized intern to support its project management team.
+                    </p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Alexandria / Hybrid</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="image rounded overflow-hidden position-relative">
+                  <img class="w-100" src="11.jpeg" alt="">
+                  <div class="layer "></div>
+                  <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                    <h6 class="sm-title">Junior Social Media Specialist</h6>
+                  </div>
+                  <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                    <p class="mini "> A tech-focused startup is hiring a junior social media specialist to manage its online presence and content.
+                    </p>
+                    <h5 class="text-white p-1">Location :</h5>
+                    <p class="mini"> Remote / Hybrid</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+            <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab"
+              tabindex="0">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+                <div class="col">
+                  <div class="image rounded overflow-hidden position-relative">
+                    <img class="w-100" src="13.jpeg" alt="">
+                    <div class="layer "></div>
+                    <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                      <h6 class="sm-title"> Technical Content Creator (Internship) </h6>
+                    </div>
+                    <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                      <p class="mini"> Join a growing educational platform and help create content that simplifies engineering concepts.
+                      </p>
+                      <h5 class="text-white p-1">Location :</h5>
+                      <p class="mini"> Online</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="image rounded overflow-hidden position-relative">
+                    <img class="w-100" src="12.jpeg" alt="">
+                    <div class="layer "></div>
+                    <div class="text text-center position-absolute start-50 z-3 translate-middle">
+                      <h6 class="sm-title"> Sustainability Program Intern</h6>
+                    </div>
+                    <div class="icons text-center position-absolute start-50 z-3 translate-middle">
+                      <p class="mini"> NGO working in green tech and sustainable development is seeking interns for awareness projects.
+                      </p>
+                      <h5 class="text-white p-1">Location :</h5>
+                      <p class="mini"> Online / Field</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="image rounded overflow-hidden position-relative">
+                    <img class="w-100" src="10.jpeg" alt="">
+                    <div class="layer "></div>
+                    <div class="text text-center position-absolute start-50 z-3 translate-middle ">
+                      <h6 class="sm-title">Mechatronics Engineering Internship</h6>
+                    </div>
+                    <div class="icons text-center position-absolute start-50 z-3 translate-middle ">
+                      <p class="mini "> A leading industrial company is looking for passionate mechatronics engineering students for a summer internship program.</p>
+                      <h5 class="text-white p-1">Location :</h5>
+                      <p class="mini"> Cairo / Alexandria</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+  </section>
+  <section id="clients">
+    <div class="container py-5">
+      <div class="title-box text-center">
+        <h2 class="section-head position-relative">Feedbacks.</h2>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active nex"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2" class="nex"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3" class="nex"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="car-inner w-100 py-5 text-center">
+              <img src="imgs/1_New1.jpg " class="rounded-circle mb-2 p-2 " alt="...">
+
+              <P class="px-5">
+                "The internship helped me connect what I studied in class to real machines. I even got the chance to work on a mini automation project. I’m more confident now to apply for full-time jobs."  
+              </P>
+              <h5 class="text-black fw-bold">Sarah Adel</h5>
+              <h6>Mechatronics Engineering Intern at IndustrialTech</h6>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="car-inner w-100 py-5 text-center">
+              <img src="imgs/1_New1.jpg " class="rounded-circle mb-2 p-2 " alt="...">
+
+              <P class="px-5">
+                "Starting out as a junior with only volunteering experience, I wasn’t sure I’d get hired. But they saw my passion for content and gave me a chance. Now I manage pages with thousands of followers!"
+              </P>
+              <h5 class="text-black fw-bold">Ahmed Fathy</h5>
+              <h6>Social Media Specialist at ByteUp</h6>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="car-inner w-100 py-5 text-center">
+              <img src="imgs/1_New1.jpg " class="rounded-circle mb-2 p-2 " alt="...">
+
+              <P class="px-5">
+                "I love explaining things, and this internship gave me the space to turn that into actual lessons and videos. My work even got featured in one of their main courses!"
+              </P>
+              <h5 class="text-black fw-bold">Nourhan Khaled</h5>
+              <h6>Technical Content Creator Intern at EduCraft</h6>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon ne" aria-hidden="true"><i class="fa-solid fa-chevron-left fa-2xl"></i></span>
+          <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
+          <span class="visually-hidden ">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="tittle-box text-center mb-5">
+          <h2 class="section-head position-relative">Our Team.</h2>
+        </div>
+        <div class="team-area">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-4  col-sm-6 col-xs-12">
+                <div class="single-team rounded-2">
+                  <div class="img-area position-relative">
+                    <img src="hany.png" class="img-responsive w-100" alt="">
+                    <div class="social custom-cursor-on-hover d-flex align-items-center justify-content-center">
+                      <ul class="list-inline d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Yousef Hany</h4>
+                    <h5 class="fw-bolder">Cheif Excutive Officer</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4  col-sm-6 col-xs-12">
+                <div class="single-team rounded-2">
+                  <div class="img-area position-relative">
+                    <img src="1.png" class="img-responsive w-100" alt="">
+                    <div class="social custom-cursor-on-hover d-flex align-items-center justify-content-center">
+                      <ul class="list-inline d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Mohamed Sabry</h4>
+                    <h5 class="fw-bolder">Cheif Finincial Officer</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4  col-sm-6 col-xs-12">
+                <div class="single-team rounded-2">
+                  <div class="img-area position-relative">
+                    <img src="2.png" class="img-responsive w-100" alt="">
+                    <div class="social custom-cursor-on-hover d-flex align-items-center justify-content-center">
+                      <ul class="list-inline d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Noreen Osama</h4>
+                    <h5 class="fw-bolder">Cheif Marketing Officer</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4  col-sm-6 col-xs-12">
+                <div class="single-team rounded-2">
+                  <div class="img-area position-relative">
+                    <img src="3.png" class="img-responsive w-100" alt="">
+                    <div class="social custom-cursor-on-hover d-flex align-items-center justify-content-center">
+                      <ul class="list-inline d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Moaz Azab</h4>
+                    <h5 class="fw-bolder">Cheif Devolper Officer </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4  col-sm-6 col-xs-12">
+                <div class="single-team rounded-2">
+                  <div class="img-area position-relative">
+                    <img src="4.png" class="img-responsive w-100" alt="">
+                    <div class="social custom-cursor-on-hover d-flex align-items-center justify-content-center">
+                      <ul class="list-inline d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Ahmed Khairy</h4>
+                    <h5 class="fw-bolder">Cheif operation officer</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class=" section-padding" data-scroll-index="6">
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="tittle-box text-center">
+          <h2 class="section-head position-relative">Contact Us.</h2>
+        </div>
+        <div class="col-md-offset-1 col-md-10">
+          <div class="info text-center mb-50 d-flex py-5 justify-content-center ">
+            <div class="col-md-4">
+              <div class="item">
+                <span class="icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+                <h6 class="fw-bold">Address</h6>
+                <p>Alexandria - Smouha</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="item">
+                <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <h6 class="fw-bold">Email</h6>
+                <p>oppotopia0@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="item">
+                <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <h6 class="fw-bold">Phone</h6>
+                <p>+20 10 66855102</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- contact form -->
+          <form class="form" id="contact-form" method="post" action="contact.php" novalidate="true">
+            <div class="messages"></div>
+
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea id="form_message" name="message" placeholder="Message" rows="8" required="required"></textarea>
+                  </div>
+
+                  <input type="submit" value="Submit" class="buton buton-bg bg-black text-white">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </section>
+
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/Scroll.js"></script>
+  <script src="JS/Cards.js"></script>
+</body>
+
+</html>
